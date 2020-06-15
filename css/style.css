@@ -8,15 +8,11 @@ body
 {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    line-height: 2;
 }
 
 
 /* Globales */
-.contenedor
-{
-    max-width: 120rem;
-    margin: 0 auto;
-}
 
 h1
 {
@@ -36,6 +32,29 @@ h3
 h4
 {
     font-size: 2.6rem;
+}
+
+/* Utilidades */
+.centrar-texto
+{
+    text-align: center;
+}
+
+.contenedor
+{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.fw-300
+{
+    font-weight: 300;
+}
+
+.seccion
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Header */
@@ -90,4 +109,23 @@ h4
 .navegacion a:hover
 {
     color: #71b100;
+}
+
+/* Main Mas Nosotros */
+
+.iconos-nosotros
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono
+{
+    flex-basis: calc(33.3% - 2rem);
+    text-align: center;
+}
+
+.icono h3
+{
+    text-transform: uppercase;
 }
