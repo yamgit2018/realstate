@@ -1,7 +1,14 @@
 html
 {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+
+*, *:before, *:after 
+{
+    box-sizing: inherit;
+}
+  
 
 
 body
@@ -13,6 +20,10 @@ body
 
 
 /* Globales */
+img
+{
+    max-width: 100%;
+}
 
 h1
 {
@@ -57,6 +68,39 @@ h4
     margin-bottom: 2rem;
 }
 
+.no-margin
+{
+    margin: 0;
+}
+
+.boton-block 
+{
+    display: block !important;
+}
+
+.boton
+{
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    
+}
+
+.boton-naranja
+{
+    background-color: #ff5833;
+}
+
+.boton-verde
+{
+    background-color: green;
+    
+}
 /* Header */
 .site-header.inicio
 {
@@ -128,4 +172,35 @@ h4
 .icono h3
 {
     text-transform: uppercase;
+}
+
+/* Main Casa y Depas */
+.contenedor-anuncios
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio
+{
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+}
+
+.contenido-anuncio
+{
+    padding: 2rem;
+}
+
+.precio
+{
+    color: green;
+    font-size: 1.8rem;
+}
+
+.ver-todas
+{
+    display: flex;
+    justify-content: flex-end;
 }
