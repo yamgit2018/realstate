@@ -204,3 +204,26 @@ h4
     display: flex;
     justify-content: flex-end;
 }
+
+/* Main Contactanos */
+
+.site-contactanos
+{
+    background-image: url(../img/encuentra.jpg);
+    height: 60rem;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contactanos
+{
+    color: white;
+    flex: 1;
+}
+
+.contenido-contactanos p
+{
+    font-size: 2rem;
+}
