@@ -1,0 +1,369 @@
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after 
+{
+    box-sizing: inherit;
+}
+  
+
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* Globales */
+img
+{
+    max-width: 100%;
+}
+
+h1
+{
+    font-size: 3.8rem;
+}
+
+h2
+{
+    font-size: 3.4rem;
+}
+
+h3
+{
+    font-size: 3rem;
+}
+
+h4
+{
+    font-size: 2.6rem;
+}
+
+/* Utilidades */
+.centrar-texto
+{
+    text-align: center;
+}
+
+.contenedor
+{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.fw-300
+{
+    font-weight: 300;
+}
+
+.seccion
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.no-margin
+{
+    margin: 0;
+}
+
+.boton-block 
+{
+    display: block !important;
+}
+
+.boton
+{
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    
+}
+
+.boton-naranja
+{
+    background-color: #ff5833;
+}
+
+.boton-verde
+{
+    background-color: green;
+    
+}
+/* Header */
+.site-header.inicio
+{
+    background-image: url(../img/header.jpg);
+    height: 100vh;
+    min-height: 60rem;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.contenido-header
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.contenido-header h1
+{
+    color: white;
+    max-width: 60rem;
+    line-height: 2;
+    padding-bottom: 2rem;
+}
+
+.barra
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+.navegacion a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.navegacion a:last-of-type
+{
+    margin: 0;
+}
+
+.navegacion a:hover
+{
+    color: #71b100;
+}
+
+/* Main Mas Nosotros */
+
+.iconos-nosotros
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono
+{
+    flex-basis: calc(33.3% - 2rem);
+    text-align: center;
+}
+
+.icono h3
+{
+    text-transform: uppercase;
+}
+
+/* Main Casa y Depas */
+.contenedor-anuncios
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio
+{
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+}
+
+.contenido-anuncio
+{
+    padding: 2rem;
+}
+
+.precio
+{
+    color: green;
+    font-size: 1.8rem;
+}
+
+.iconos-caracteristicas
+{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.iconos-caracteristicas li
+{
+    display: flex;
+    flex: 1;
+}
+
+.iconos-caracteristicas li img
+{
+    margin-right: 2rem;
+}
+
+.ver-todas
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Main Contactanos */
+
+.site-contactanos
+{
+    background-image: url(../img/encuentra.jpg);
+    height: 60rem;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contactanos
+{
+    color: white;
+    flex: 1;
+}
+
+.contenido-contactanos p
+{
+    font-size: 2rem;
+}
+
+/* Main Blog */
+
+.seccion-inferior
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog
+{
+    flex-basis: 60%;
+}
+
+
+.seccion-inferior .testimoniales
+{
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type
+{
+    margin: 0;
+}
+
+.entrada-blog .imagen-blog
+{
+    flex-basis: 40%;
+}
+
+.entrada-blog .texto-blog
+{
+    flex-basis: calc(60% - 3rem);
+    line-height: 1.8;
+}
+
+.texto-blog a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.texto-blog h4::after
+{
+    content: ' ';
+    display: block;
+    background-color: green;
+    width: 15rem;
+    height: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.texto-blog span
+{
+    color: orange;
+}
+
+/* Main Testimoniales */
+
+.testimonial
+{
+    background-color: green;
+    border-radius: 2rem;
+    padding: 3rem;
+    color: white;
+    font-size: 2.4rem;
+}
+
+.testimonial blockquote::before
+{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote
+{
+    position: relative;
+    padding-left: 4rem;
+
+
+}
+
+.testimonial p
+{
+    text-align: right;
+}
+
+/* Footer */
+.site-footer
+{
+    background-color:#333333;
+    
+}
+
+.contenido-footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    
+}
+
+.contenido-footer p
+{
+    color: white;
+    font-size: 2rem;
+}
+
+
+
