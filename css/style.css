@@ -112,6 +112,11 @@ h4
 
 }
 
+.site-header
+{
+    background-color: #333333;
+}
+
 .contenido-header
 {
     height: 100%;
@@ -133,7 +138,7 @@ h4
 {
     display: flex;
     justify-content: space-between;
-    padding-top: 3rem;
+    padding: 3rem 0;
     align-items: center;
 }
 
@@ -365,5 +370,28 @@ h4
     font-size: 2rem;
 }
 
+
+/* Pagina Nosotros */
+
+.nosotros
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-nosotros
+{
+    flex-basis: 50%;
+}
+
+.contenido-nosotros
+{
+    flex-basis: calc(50% - 2rem);
+}
+
+.contenido-nosotros h4
+{
+    padding-bottom: 2rem;
+}
 
 
