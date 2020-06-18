@@ -342,3 +342,28 @@ h4
 {
     text-align: right;
 }
+
+/* Footer */
+.site-footer
+{
+    background-color:#333333;
+    
+}
+
+.contenido-footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    
+}
+
+.contenido-footer p
+{
+    color: white;
+    font-size: 2rem;
+}
+
+
+
