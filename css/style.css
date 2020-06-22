@@ -93,7 +93,13 @@ h4
     font-weight: 700;
     font-size: 1.8rem;
     margin-top: 3rem;
+    border: none;
     
+}
+
+.boton:hover
+{
+    cursor: pointer;
 }
 
 .boton-naranja
@@ -430,3 +436,61 @@ h4
     justify-content: space-between;
     align-items: center;
 }
+
+/* Pagina Contacto */
+label
+{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]), textarea, select
+{
+    background-color: #e1e1e1;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+select
+{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+textarea
+{
+    height: 20rem;
+}
+
+legend
+{
+    font-size: 2.4rem;
+    color: #333333;
+}
+
+.forma-contacto
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.forma-contacto label
+{
+    margin-right: 2rem;
+}
+
+input[type="radio"]
+{
+    margin: 0;
+    width: auto; 
+}
+
