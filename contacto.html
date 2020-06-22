@@ -22,8 +22,61 @@
             </nav>
         </div>  
     </header>
-    
-    <main>
+        <h1 class="fw-300 centrar-texto">Contacto</h1>
+        <img src="img/destacada3.jpg" alt="Contacto">
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">LLena el Formulario de Contacto</h2>
+        <form action=""> 
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="correo">E-mail:</label>
+                <input type="email" id="correo" placeholder="Tu Email">
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" placeholder="Tu Telefono">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea  id="mensaje" ></textarea>
+            </fieldset>  
+            
+            <fieldset>
+                <legend>Informacion sobre Propiedad</legend>
+                <label for="opciones">Vende o Compra</label>
+                <select id="opciones">
+                    <option value="" disabled selected>--Seleccionar--</option>
+                    <option value="">Compra</option>
+                    <option value="">Venta</option>
+                </select> 
+                
+                <label for="cantidad">Cantidad:</label>
+                <input type="number"  id="cantidad" min="1" max="100">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <p class="no-margin">Como deseas ser Contactado:</p>
+                <div class="forma-contacto">
+                    <label for="fono">Telefono</label>
+                    <input type="radio" name="contacto" id="fono">
+
+                    <label for="email">Correo</label>
+                    <input type="radio" name="contacto" id="email">
+                </div>        
+                <p class="no-margin">Si eligio Telefono, elija la Fecha y Hora</p>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora</label>
+                <input type="time"  id="hora" min="09:00" max="18:00">
+
+                <input type="submit" value="Enviar" class="boton boton-verde">
+            </fieldset>
+
+        </form>
 
     </main>
 
